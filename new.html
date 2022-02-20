@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50">
+    <header>
+        <h1 class="text-5xl text-bolder text-blue-600 text-center mt-8">Calculate Money</h1>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <div class="flex gap-6">
+                <!-- image  -->
+                <div class="w-2/4 h-4/5 pt-24">
+                        <img class="" src="1.jpg" alt="">
+                </div>
+                <!-- income input  -->
+                
+                <div class=" flex-grow pb-8 my-12 pl-12 bg-slate-200 mx-auto">
+                    <h1 class="text-2xl block my-5 ">Expenses</h1>
+                  <div class="text-center">
+                   
+                     <div class=" pt-24 ">
+                         <label for="Income">Income :</label>
+                         <input id="Income-box" type="text"class="shadow appearence-none border border-gray-500 rounded  py-1">
+                     </div>
+                     <!-- Expenses  -->
+                    <div>
+                     
+                     <div class="my-5">
+                         <h1 class="text-2xl block ">Expenses</h1>
+                         <!-- Expenses input  -->
+                         <div class="my-5">
+                             <div class="flex-grow pt-5 ">
+                                 <label for="Income">Food :</label>
+                                 <input id="food-box" type="text"class="shadow appearence-none border border-gray-500 rounded  py-1">
+                             </div>
+                             <div class="flex-grow pt-5 ">
+                                 <label for="Income">Rent :</label>
+                                 <input id="rent-box" type="text"class="shadow appearence-none border border-gray-500 rounded  py-1">
+                             </div>
+                             <div class="flex-grow pt-5 ">
+                                 <label for="Income">Clothes:</label>
+                                 <input id="clothes-box" type="text"class="shadow appearence-none border border-gray-500 rounded  py-1">
+                             </div>
+                         </div>
+                         <button id="Calculate-btn" class="bg-blue-500  text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded mt-4  text-center"> Calculate </button>
+                     </div>
+                     <div>
+                        <h4 class="text-4xl font-bold"> Expenses Total:<span id="expenses-total">00</span></h4>
+                     </div>
+                     <div>
+                        <h4 class="text-4xl font-bold">Balance :<span id="balance-total">00</span></h4>
+                     </div>
+                       <!-- saving  -->
+         <div class="flex-grow pt-5 inline">
+             <label for="Income">Save:  </label>
+             <input id="save-input" type="text"class="shadow appearence-none border border-gray-500 rounded  py-1">  % <button id="save-btn" class="bg-blue-500  text-white font-bold py-2 px-4 border-b-4 border-blue-500 rounded mt-4  ">save </button>
+         </div>
+         <div>
+             <h1  class="font-bold text-3xl ">Saving Amount:  <span id="saving-amount">00</span>  </h1>
+         </div>
+         <div>
+             <h1  class="font-bold text-3xl ">Remaining Balance:<span id="remaining-balance">00</span>  </h1>
+         </div>
+             
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
